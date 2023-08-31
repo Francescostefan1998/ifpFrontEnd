@@ -14,6 +14,7 @@
 	rel="stylesheet">
 
 </head>
+
 <body>
 
 	<!-- Navbar -->
@@ -39,7 +40,7 @@
 		</div>
 	</nav>
 
-	
+
 
 
 	<section class="bg-light py-5 text-center">
@@ -48,7 +49,7 @@
 		<p>Unendo tradizione e innovazione per un futuro migliore.</p>
 	</section>
 
-<section class="pt-5">
+	<section class="pt-5">
 		<div class="container">
 			<h3>Corsi Rivolti a Giovani e Professionisti</h3>
 			<p>I corsi sono rivolti ai ragazzi in uscita dalla scuola
@@ -71,21 +72,29 @@
 		<a href="./branches.jsp" class="text-decoration-none text-dark">
 			<div class="container">
 				<h2 class="mb-4">Le nostre sedi</h2>
-				<p>Clicca qui per la lista dei cor/p>
+				<p>Clicca qui per la lista dei corsi.</p>
+				<ul></ul>
 			</div>
 		</a>
 	</section>
 
 
-
 	<!-- Corsi Section -->
 	<section id="corsi" class="bg-light py-5">
-		<a href="./courses.jsp" class="text-decoration-none text-dark">
-			<div class="container">
-				<h2 class="mb-4">I nostri corsi</h2>
-				<p>Informazioni sui corsi offerti dall'università...</p>
-			</div>
-		</a>
+
+		<div class="container">
+			<h2 class="mb-4">I nostri corsi</h2>
+			<p id="courses" data-shown="false">Clicca qui per la lista dei corsi.</p>
+			<ul class="list-group" id="coursesList">
+				<li class="list-group-item">Matematica - Dr. Mario Rossi</li>
+				<li class="list-group-item">Letteratura - Prof. Anna Bianchi</li>
+				<li class="list-group-item">Fisica - Dr. Luca Verdi</li>
+				<li class="list-group-item">Storia dell'Arte - Prof.ssa Elena
+					Neri</li>
+				<li class="list-group-item">Ingegneria - Ing. Carlo Gialli</li>
+			</ul>
+		</div>
+
 	</section>
 
 	<!-- Docenti Section -->
@@ -107,6 +116,9 @@
 		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"
+		type="text/javascript"></script>
 
+	<script src="./script.js"></script>
 </body>
 </html>
