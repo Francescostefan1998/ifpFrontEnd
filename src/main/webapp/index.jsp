@@ -18,9 +18,9 @@
 <body>
 
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 		<div class="container">
-			<a class="navbar-brand " href="#">Università XYZ</a>
+			<a class="navbar-brand " href="#">Istituto Formazione Professionale</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false"
@@ -45,7 +45,7 @@
 
 	<section class="bg-light py-5 text-center">
 
-		<h1>Benvenuto all'Università XYZ</h1>
+		<h1>Benvenuto all'Istituto Formazione Professionale</h1>
 		<p>Unendo tradizione e innovazione per un futuro migliore.</p>
 	</section>
 
@@ -69,13 +69,15 @@
 
 	<!-- Sedi Section -->
 	<section id="sedi" class="py-5">
-		<a href="./branches.jsp" class="text-decoration-none text-dark">
-			<div class="container">
-				<h2 class="mb-4">Le nostre sedi</h2>
-				<p>Clicca qui per la lista dei corsi.</p>
-				<ul></ul>
+		
+			<div class="container"><a href="./branches.jsp" class="text-decoration-none text-dark">
+				<h2 class="mb-4">Le nostre sedi</h2></a>
+				<p id="branches" data-shown="false">Clicca qui per la lista dei corsi.</p>
+				<ul class="list-group" id="branchesList">
+				
+			</ul>
 			</div>
-		</a>
+		
 	</section>
 
 
@@ -86,12 +88,7 @@
 			<h2 class="mb-4">I nostri corsi</h2>
 			<p id="courses" data-shown="false">Clicca qui per la lista dei corsi.</p>
 			<ul class="list-group" id="coursesList">
-				<li class="list-group-item">Matematica - Dr. Mario Rossi</li>
-				<li class="list-group-item">Letteratura - Prof. Anna Bianchi</li>
-				<li class="list-group-item">Fisica - Dr. Luca Verdi</li>
-				<li class="list-group-item">Storia dell'Arte - Prof.ssa Elena
-					Neri</li>
-				<li class="list-group-item">Ingegneria - Ing. Carlo Gialli</li>
+				
 			</ul>
 		</div>
 
@@ -99,12 +96,15 @@
 
 	<!-- Docenti Section -->
 	<section id="docenti" class="py-5">
-		<a href="./teacher.jsp" class="text-decoration-none text-dark">
-			<div class="container">
-				<h2 class="mb-4">I nostri docenti</h2>
-				<p>Conosci il nostro staff docente...</p>
+		
+			<div class="container"><a href="./teacher.jsp" class="text-decoration-none text-dark">
+				<h2 class="mb-4">I nostri docenti</h2></a>
+				<p id="teachers"  data-shown="false">Conosci il nostro staff docente...</p>
+				<ul class="list-group" id="teachersList">
+				
+			</ul>
 			</div>
-		</a>
+		
 	</section>
 	<!-- Footer Section -->
 	<footer class="bg-dark text-white text-center py-4">
